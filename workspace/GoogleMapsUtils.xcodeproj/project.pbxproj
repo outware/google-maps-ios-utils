@@ -20,7 +20,6 @@
 		0242D1AA1C7C19E600557130 /* GMUDefaultClusterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1A41C7C19E600557130 /* GMUDefaultClusterRenderer.m */; };
 		0242D1B31C7C19F700557130 /* GQTPointQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1AF1C7C19F700557130 /* GQTPointQuadTree.m */; };
 		0242D1B41C7C19F700557130 /* GQTPointQuadTreeChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1B11C7C19F700557130 /* GQTPointQuadTreeChild.m */; };
-		0242D1E91C7C1CC100557130 /* libGoogleMapsUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0242D17A1C7C16A400557130 /* libGoogleMapsUtils.a */; };
 		0242D2031C7D3AC300557130 /* libGoogleMapsUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0242D17A1C7C16A400557130 /* libGoogleMapsUtils.a */; };
 		0242D2171C7E759D00557130 /* GMUStaticClusterTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D2161C7E759D00557130 /* GMUStaticClusterTest.m */; };
 		0245B58C1CED786A00ABBB7D /* GMUWrappingDictionaryKeyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0245B58B1CED786A00ABBB7D /* GMUWrappingDictionaryKeyTest.m */; };
@@ -46,24 +45,56 @@
 		02F87C011D20B64100C65016 /* m5.png in Resources */ = {isa = PBXBuildFile; fileRef = 02F87BED1D20B53B00C65016 /* m5.png */; };
 		02F87C071D20B68F00C65016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F87BF01D20B53B00C65016 /* LaunchScreen.storyboard */; };
 		02F87C081D20B68F00C65016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02F87BF21D20B53B00C65016 /* Main.storyboard */; };
-		49CAD6F870C5583C82B43593 /* libPods-DevApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 662F6FAE156096701716AEEC /* libPods-DevApp.a */; };
-		8869518CED7812A43442DF2E /* libPods-UnitTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50EB71F39B4F31FF9127AD8B /* libPods-UnitTest.a */; };
+		0CAF997A6A53A7B94F3E040A /* Pods_DevApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DD5BC2656E5488A96F5C22 /* Pods_DevApp.framework */; };
+		0E1D044E8CB6BBCA119D6E69 /* Pods_UnitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BAD3BD751B3CBC94C570965 /* Pods_UnitTest.framework */; };
+		6A0A5B061DFF9608009CDE05 /* GMUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0A5B051DFF9608009CDE05 /* GMUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B0B1DFF9608009CDE05 /* GMUtils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0A5B031DFF9608009CDE05 /* GMUtils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6A0A5B101DFF9632009CDE05 /* GMUStaticCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1961C7C19E600557130 /* GMUStaticCluster.m */; };
+		6A0A5B111DFF963E009CDE05 /* GMUDefaultClusterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1A41C7C19E600557130 /* GMUDefaultClusterRenderer.m */; };
+		6A0A5B121DFF964D009CDE05 /* GQTPointQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1AF1C7C19F700557130 /* GQTPointQuadTree.m */; };
+		6A0A5B131DFF9656009CDE05 /* GMUWrappingDictionaryKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 023320821CB20086008024F2 /* GMUWrappingDictionaryKey.m */; };
+		6A0A5B141DFF9661009CDE05 /* GMUNonHierarchicalDistanceBasedAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 0233207C1CACF991008024F2 /* GMUNonHierarchicalDistanceBasedAlgorithm.m */; };
+		6A0A5B151DFF9663009CDE05 /* GMUSimpleClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1901C7C19E600557130 /* GMUSimpleClusterAlgorithm.m */; };
+		6A0A5B161DFF9673009CDE05 /* GMUClusterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1941C7C19E600557130 /* GMUClusterManager.m */; };
+		6A0A5B171DFF967E009CDE05 /* GMUDefaultClusterIconGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1A21C7C19E600557130 /* GMUDefaultClusterIconGenerator.m */; };
+		6A0A5B181DFF968C009CDE05 /* GMUGridBasedClusterAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D18E1C7C19E600557130 /* GMUGridBasedClusterAlgorithm.m */; };
+		6A0A5B191DFF9692009CDE05 /* GQTPointQuadTreeChild.m in Sources */ = {isa = PBXBuildFile; fileRef = 0242D1B11C7C19F700557130 /* GQTPointQuadTreeChild.m */; };
+		6A0A5B1A1DFF9969009CDE05 /* GMUClusterAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D18C1C7C19E600557130 /* GMUClusterAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B1B1DFF9969009CDE05 /* GMUGridBasedClusterAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D18D1C7C19E600557130 /* GMUGridBasedClusterAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B1C1DFF9969009CDE05 /* GMUNonHierarchicalDistanceBasedAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0233207B1CACF991008024F2 /* GMUNonHierarchicalDistanceBasedAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B1D1DFF9969009CDE05 /* GMUSimpleClusterAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D18F1C7C19E600557130 /* GMUSimpleClusterAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B1E1DFF9969009CDE05 /* GMUWrappingDictionaryKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 023320811CB20086008024F2 /* GMUWrappingDictionaryKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B1F1DFF9969009CDE05 /* GMUClusterItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1921C7C19E600557130 /* GMUClusterItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B201DFF9969009CDE05 /* GMUClusterManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1931C7C19E600557130 /* GMUClusterManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B221DFF9969009CDE05 /* GMUStaticCluster.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1951C7C19E600557130 /* GMUStaticCluster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B231DFF9969009CDE05 /* GMUClusterIconGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D19F1C7C19E600557130 /* GMUClusterIconGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B241DFF9969009CDE05 /* GMUClusterRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1A01C7C19E600557130 /* GMUClusterRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B251DFF9969009CDE05 /* GMUDefaultClusterIconGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1A11C7C19E600557130 /* GMUDefaultClusterIconGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B261DFF9969009CDE05 /* GMUDefaultClusterRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1A31C7C19E600557130 /* GMUDefaultClusterRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B271DFF9969009CDE05 /* GQTBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1AC1C7C19F700557130 /* GQTBounds.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B281DFF9969009CDE05 /* GQTPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1AD1C7C19F700557130 /* GQTPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B291DFF9969009CDE05 /* GQTPointQuadTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1AE1C7C19F700557130 /* GQTPointQuadTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B2A1DFF9969009CDE05 /* GQTPointQuadTreeChild.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1B01C7C19F700557130 /* GQTPointQuadTreeChild.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B2B1DFF9969009CDE05 /* GQTPointQuadTreeItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1B21C7C19F700557130 /* GQTPointQuadTreeItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B401DFFA3C0009CDE05 /* GMUCluster.h in Headers */ = {isa = PBXBuildFile; fileRef = 0242D1911C7C19E600557130 /* GMUCluster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A0A5B431DFFC03E009CDE05 /* GMUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0A5B031DFF9608009CDE05 /* GMUtils.framework */; };
+		6A0A5B451DFFC7E2009CDE05 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A0A5B441DFFC7E2009CDE05 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0242D1E71C7C1CB900557130 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0242D1721C7C16A400557130 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0242D1791C7C16A400557130;
-			remoteInfo = GoogleMapsUtils;
-		};
 		0242D2041C7D3AC300557130 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0242D1721C7C16A400557130 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0242D1791C7C16A400557130;
 			remoteInfo = GoogleMapsUtils;
+		};
+		6A0A5B081DFF9608009CDE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0242D1721C7C16A400557130 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A0A5B021DFF9608009CDE05;
+			remoteInfo = GMUtils;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,6 +106,17 @@
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A0A5B0F1DFF9608009CDE05 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6A0A5B0B1DFF9608009CDE05 /* GMUtils.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -156,9 +198,18 @@
 		02F87BF31D20B53B00C65016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		043A473A3B5B27C4AF01E536 /* Pods-DevApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DevApp/Pods-DevApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3F9C6AB6446AF0E3F055FDF1 /* Pods-UnitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTest/Pods-UnitTest.release.xcconfig"; sourceTree = "<group>"; };
-		50EB71F39B4F31FF9127AD8B /* libPods-UnitTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UnitTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FD758CEC36F2FBE64509EB /* Pods-GMUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMUtils.release.xcconfig"; path = "Pods/Target Support Files/Pods-GMUtils/Pods-GMUtils.release.xcconfig"; sourceTree = "<group>"; };
 		5E708BD83DBC2004DAEB2D44 /* Pods-UnitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnitTest/Pods-UnitTest.debug.xcconfig"; sourceTree = "<group>"; };
-		662F6FAE156096701716AEEC /* libPods-DevApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DevApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0A5B031DFF9608009CDE05 /* GMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A0A5B051DFF9608009CDE05 /* GMUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMUtils.h; sourceTree = "<group>"; };
+		6A0A5B071DFF9608009CDE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A0A5B3C1DFF9F6D009CDE05 /* libPods-DevApp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-DevApp.a"; path = "Pods/../build/Debug-iphoneos/libPods-DevApp.a"; sourceTree = "<group>"; };
+		6A0A5B441DFFC7E2009CDE05 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6A0A5B4A1E00CF65009CDE05 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Pods/GoogleMaps/Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		7BAD3BD751B3CBC94C570965 /* Pods_UnitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0EB32E48A5CC14043A5955C /* Pods_GMUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3DD5BC2656E5488A96F5C22 /* Pods_DevApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D737CCE9E159B29BC189C08C /* Pods-GMUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMUtils.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GMUtils/Pods-GMUtils.debug.xcconfig"; sourceTree = "<group>"; };
 		EF75722FCCF71E3F0611D17F /* Pods-DevApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevApp/Pods-DevApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,8 +225,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0242D1E91C7C1CC100557130 /* libGoogleMapsUtils.a in Frameworks */,
-				49CAD6F870C5583C82B43593 /* libPods-DevApp.a in Frameworks */,
+				6A0A5B431DFFC03E009CDE05 /* GMUtils.framework in Frameworks */,
+				0CAF997A6A53A7B94F3E040A /* Pods_DevApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +235,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0242D2031C7D3AC300557130 /* libGoogleMapsUtils.a in Frameworks */,
-				8869518CED7812A43442DF2E /* libPods-UnitTest.a in Frameworks */,
+				0E1D044E8CB6BBCA119D6E69 /* Pods_UnitTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A0A5AFF1DFF9608009CDE05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0A5B451DFFC7E2009CDE05 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,10 +256,11 @@
 				0242D1B51C7C1A2100557130 /* App */,
 				0242D1881C7C19A500557130 /* Source */,
 				0242D2101C7E752B00557130 /* Test */,
+				6A0A5B041DFF9608009CDE05 /* GMUtils */,
 				0242D17B1C7C16A400557130 /* Products */,
 				6C7B7BB481303A2DDF543C73 /* Pods */,
 				0242D1861C7C188000557130 /* XcodeConfig */,
-				456BADDE8195197F06EDEE32 /* Frameworks */,
+				59AFDFC2511CAF68DD48E82A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +270,7 @@
 				0242D17A1C7C16A400557130 /* libGoogleMapsUtils.a */,
 				0242D1CC1C7C1C1F00557130 /* DevApp.app */,
 				0242D1FE1C7D3AC300557130 /* UnitTest.xctest */,
+				6A0A5B031DFF9608009CDE05 /* GMUtils.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -430,13 +491,26 @@
 			path = ../app/Base.lproj;
 			sourceTree = "<group>";
 		};
-		456BADDE8195197F06EDEE32 /* Frameworks */ = {
+		59AFDFC2511CAF68DD48E82A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50EB71F39B4F31FF9127AD8B /* libPods-UnitTest.a */,
-				662F6FAE156096701716AEEC /* libPods-DevApp.a */,
+				6A0A5B4A1E00CF65009CDE05 /* GoogleMapsBase.framework */,
+				6A0A5B441DFFC7E2009CDE05 /* Security.framework */,
+				6A0A5B3C1DFF9F6D009CDE05 /* libPods-DevApp.a */,
+				B0EB32E48A5CC14043A5955C /* Pods_GMUtils.framework */,
+				D3DD5BC2656E5488A96F5C22 /* Pods_DevApp.framework */,
+				7BAD3BD751B3CBC94C570965 /* Pods_UnitTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A0A5B041DFF9608009CDE05 /* GMUtils */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A5B051DFF9608009CDE05 /* GMUtils.h */,
+				6A0A5B071DFF9608009CDE05 /* Info.plist */,
+			);
+			path = GMUtils;
 			sourceTree = "<group>";
 		};
 		6C7B7BB481303A2DDF543C73 /* Pods */ = {
@@ -446,19 +520,50 @@
 				EF75722FCCF71E3F0611D17F /* Pods-DevApp.release.xcconfig */,
 				5E708BD83DBC2004DAEB2D44 /* Pods-UnitTest.debug.xcconfig */,
 				3F9C6AB6446AF0E3F055FDF1 /* Pods-UnitTest.release.xcconfig */,
+				D737CCE9E159B29BC189C08C /* Pods-GMUtils.debug.xcconfig */,
+				55FD758CEC36F2FBE64509EB /* Pods-GMUtils.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6A0A5B001DFF9608009CDE05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0A5B061DFF9608009CDE05 /* GMUtils.h in Headers */,
+				6A0A5B1A1DFF9969009CDE05 /* GMUClusterAlgorithm.h in Headers */,
+				6A0A5B1B1DFF9969009CDE05 /* GMUGridBasedClusterAlgorithm.h in Headers */,
+				6A0A5B1C1DFF9969009CDE05 /* GMUNonHierarchicalDistanceBasedAlgorithm.h in Headers */,
+				6A0A5B1D1DFF9969009CDE05 /* GMUSimpleClusterAlgorithm.h in Headers */,
+				6A0A5B1E1DFF9969009CDE05 /* GMUWrappingDictionaryKey.h in Headers */,
+				6A0A5B1F1DFF9969009CDE05 /* GMUClusterItem.h in Headers */,
+				6A0A5B201DFF9969009CDE05 /* GMUClusterManager.h in Headers */,
+				6A0A5B221DFF9969009CDE05 /* GMUStaticCluster.h in Headers */,
+				6A0A5B401DFFA3C0009CDE05 /* GMUCluster.h in Headers */,
+				6A0A5B231DFF9969009CDE05 /* GMUClusterIconGenerator.h in Headers */,
+				6A0A5B241DFF9969009CDE05 /* GMUClusterRenderer.h in Headers */,
+				6A0A5B251DFF9969009CDE05 /* GMUDefaultClusterIconGenerator.h in Headers */,
+				6A0A5B261DFF9969009CDE05 /* GMUDefaultClusterRenderer.h in Headers */,
+				6A0A5B271DFF9969009CDE05 /* GQTBounds.h in Headers */,
+				6A0A5B281DFF9969009CDE05 /* GQTPoint.h in Headers */,
+				6A0A5B291DFF9969009CDE05 /* GQTPointQuadTree.h in Headers */,
+				6A0A5B2A1DFF9969009CDE05 /* GQTPointQuadTreeChild.h in Headers */,
+				6A0A5B2B1DFF9969009CDE05 /* GQTPointQuadTreeItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		0242D1791C7C16A400557130 /* GoogleMapsUtils */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0242D1831C7C16A400557130 /* Build configuration list for PBXNativeTarget "GoogleMapsUtils" */;
 			buildPhases = (
-				0242D1761C7C16A400557130 /* Sources */,
 				0242D1771C7C16A400557130 /* Frameworks */,
+				0242D1761C7C16A400557130 /* Sources */,
 				0242D1781C7C16A400557130 /* CopyFiles */,
 			);
 			buildRules = (
@@ -480,11 +585,12 @@
 				0242D1CA1C7C1C1F00557130 /* Resources */,
 				0242D1EE1C7C1DA100557130 /* [CP] Copy Pods Resources */,
 				E84278B72CDE3575AD7B6524 /* [CP] Embed Pods Frameworks */,
+				6A0A5B0F1DFF9608009CDE05 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0242D1E81C7C1CB900557130 /* PBXTargetDependency */,
+				6A0A5B091DFF9608009CDE05 /* PBXTargetDependency */,
 			);
 			name = DevApp;
 			productName = ExampleApp;
@@ -512,6 +618,25 @@
 			productReference = 0242D1FE1C7D3AC300557130 /* UnitTest.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6A0A5B021DFF9608009CDE05 /* GMUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A0A5B0C1DFF9608009CDE05 /* Build configuration list for PBXNativeTarget "GMUtils" */;
+			buildPhases = (
+				5FDABC285BBE0361F017B751 /* [CP] Check Pods Manifest.lock */,
+				6A0A5AFE1DFF9608009CDE05 /* Sources */,
+				6A0A5AFF1DFF9608009CDE05 /* Frameworks */,
+				6A0A5B001DFF9608009CDE05 /* Headers */,
+				6A0A5B011DFF9608009CDE05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GMUtils;
+			productName = GMUtils;
+			productReference = 6A0A5B031DFF9608009CDE05 /* GMUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -529,6 +654,9 @@
 					};
 					0242D1FD1C7D3AC300557130 = {
 						CreatedOnToolsVersion = 7.2.1;
+					};
+					6A0A5B021DFF9608009CDE05 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -548,6 +676,7 @@
 				0242D1CB1C7C1C1F00557130 /* DevApp */,
 				0242D1791C7C16A400557130 /* GoogleMapsUtils */,
 				0242D1FD1C7D3AC300557130 /* UnitTest */,
+				6A0A5B021DFF9608009CDE05 /* GMUtils */,
 			);
 		};
 /* End PBXProject section */
@@ -571,6 +700,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0242D1FC1C7D3AC300557130 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A0A5B011DFF9608009CDE05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -607,7 +743,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FDABC285BBE0361F017B751 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		A0C45CB836CAEA392A23DFAF /* [CP] Embed Pods Frameworks */ = {
@@ -667,7 +818,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -721,18 +872,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A0A5AFE1DFF9608009CDE05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0A5B101DFF9632009CDE05 /* GMUStaticCluster.m in Sources */,
+				6A0A5B111DFF963E009CDE05 /* GMUDefaultClusterRenderer.m in Sources */,
+				6A0A5B121DFF964D009CDE05 /* GQTPointQuadTree.m in Sources */,
+				6A0A5B131DFF9656009CDE05 /* GMUWrappingDictionaryKey.m in Sources */,
+				6A0A5B141DFF9661009CDE05 /* GMUNonHierarchicalDistanceBasedAlgorithm.m in Sources */,
+				6A0A5B151DFF9663009CDE05 /* GMUSimpleClusterAlgorithm.m in Sources */,
+				6A0A5B161DFF9673009CDE05 /* GMUClusterManager.m in Sources */,
+				6A0A5B171DFF967E009CDE05 /* GMUDefaultClusterIconGenerator.m in Sources */,
+				6A0A5B181DFF968C009CDE05 /* GMUGridBasedClusterAlgorithm.m in Sources */,
+				6A0A5B191DFF9692009CDE05 /* GQTPointQuadTreeChild.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0242D1E81C7C1CB900557130 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0242D1791C7C16A400557130 /* GoogleMapsUtils */;
-			targetProxy = 0242D1E71C7C1CB900557130 /* PBXContainerItemProxy */;
-		};
 		0242D2051C7D3AC300557130 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0242D1791C7C16A400557130 /* GoogleMapsUtils */;
 			targetProxy = 0242D2041C7D3AC300557130 /* PBXContainerItemProxy */;
+		};
+		6A0A5B091DFF9608009CDE05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A0A5B021DFF9608009CDE05 /* GMUtils */;
+			targetProxy = 6A0A5B081DFF9608009CDE05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -792,8 +960,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -828,7 +998,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -859,8 +1031,14 @@
 			baseConfigurationReference = 0229C0F81D9A461000551202 /* GMU-DevApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Base/Frameworks",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/../app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.google.gmsutils.DevApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -872,7 +1050,12 @@
 			baseConfigurationReference = 0229C0F71D9A461000551202 /* GMU-DevApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Base/Frameworks",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/../app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -946,6 +1129,121 @@
 			};
 			name = Release;
 		};
+		6A0A5B0D1DFF9608009CDE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D737CCE9E159B29BC189C08C /* Pods-GMUtils.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GMUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.racv.membership.GMUtils;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A0A5B0E1DFF9608009CDE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55FD758CEC36F2FBE64509EB /* Pods-GMUtils.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GMUtils/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.racv.membership.GMUtils;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -981,6 +1279,15 @@
 			buildConfigurations = (
 				0242D2071C7D3AC300557130 /* Debug */,
 				0242D2081C7D3AC300557130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A0A5B0C1DFF9608009CDE05 /* Build configuration list for PBXNativeTarget "GMUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A0A5B0D1DFF9608009CDE05 /* Debug */,
+				6A0A5B0E1DFF9608009CDE05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

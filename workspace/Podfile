@@ -1,5 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '7.0'
+platform :ios, '8.0'
+use_frameworks!
 
 target 'DevApp' do
   pod 'GoogleMaps'
@@ -8,4 +9,8 @@ end
 target 'UnitTest' do
   pod 'GoogleMaps'
   pod 'OCMock'
+end
+
+target 'GMUtils' do
+  pod 'GoogleMaps'
 end
